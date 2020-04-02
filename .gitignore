@@ -1,0 +1,8 @@
+node_modules
+.idea/
+allure-report/
+allure-results/
+package-lock.json
+qa_e2e_test.iml
+local.log
+screenshots/
