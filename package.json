@@ -28,7 +28,6 @@
     },
     "scripts": {
         "test": "cross-env HOST=https://expresspigeontest.com/ USER=evgeniy.shvab+0331r@gmail.com ./node_modules/.bin/wdio",
-        "testBsAll": "yarn testBS --spec ./test/specs/elements/; yarn testBS --spec ./test/specs/home/; yarn testBS --spec ./test/specs/1on1/; yarn testBS --spec ./test/specs/15five/",
         "reportGenerate": "allure generate allure-results/ --clean"
     },
     "keywords": [],

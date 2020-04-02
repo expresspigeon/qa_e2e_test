@@ -11,7 +11,7 @@ describe('ExpressPigeon login page', () => {
     // it('bad password', () => {
     //     LoginPage.login(userName, 'test')
     //     LoginPage.alertElement.waitForDisplayed(3000);
-    //     expect(LoginPage.alertElement.getText()).to.be.equal('Please enter a correct email and password. Passwords are case-sensitive.');
+    //     expect(LoginPage.alertElement.getText()).to.be.equal('');
     //     expect(browser.getUrl()).to.deep.include('/account/login');
     // });
     it('correct data', () => {
