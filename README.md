@@ -21,7 +21,7 @@ Before test execute Chrome Driver `./chromedriver --port=4444` in chrome drivers
 
 1. Execute all test: `yarn test`
 2. Execute test for one tab: `yarn test --spec ./test/specs/contacts/`
-3. Execute test from one file: `yarn test --spec ./test/specs/15five/lists.js`
+3. Execute test from one file: `yarn test --spec ./test/specs/contacts/lists.js`
 
 ### Generate HTML Report
 
