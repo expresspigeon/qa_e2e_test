@@ -6,9 +6,10 @@ const environmentUrl = process.env.HOST;
 class LoginPage extends Page {
 
     get username() { return $(`[type='text'][name='email']`); }
-    get secret() { return $(`[type='password'][name='secret']`); }
+    get secret() { return $(`[type='text'][name='secret']`); }
     get password() { return $(`[type='password'][name='password']`); }
     get submitBtn() { return $(`button[title='Login']`); }
+    get badPasswordMsg() {return $(`[action='/access/process_login'] .parsley-errors-list label`); }
 
     open() {
         super.open('access/login');
