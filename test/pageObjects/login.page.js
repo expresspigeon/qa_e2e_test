@@ -1,6 +1,5 @@
 import Page from './page';
 import helpers from "../helpers/helpers";
-//import HomePage from './home/home.page'
 const environmentUrl = process.env.HOST;
 
 class LoginPage extends Page {
