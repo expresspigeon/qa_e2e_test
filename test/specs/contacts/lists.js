@@ -1,5 +1,6 @@
 import ContactLists from '../../pageObjects/contacts/lists.page'
 import LoginPage from '../../pageObjects/login.page'
+import DashboardPage from '../../pageObjects/dashboard.page'
 const userName = process.env.USER;
 const secretName = process.env.SECRET;
 const pwdName = process.env.PASSWORD;
@@ -12,10 +13,17 @@ describe('Contact Lists', () => {
         LoginPage.open()
         LoginPage.login(userName,secretName,pwdName)
     });
-
+    after(function () {
+        DashboardPage.logout()
+    })
     it('Lists: Open Page and Click Search Icon', () => {
         ContactLists.open(); 
         ContactLists.pageTitle.waitForDisplayed()
         ContactLists.searchIcon.click()
+    });
+    it('Lists: Create new list', () => {
+        ContactLists.open(); 
+        ContactLists.pageTitle.waitForDisplayed()
+        ContactLists.createNewListBtn.click()
     });
 });
