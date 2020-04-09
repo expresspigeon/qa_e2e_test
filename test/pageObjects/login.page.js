@@ -1,6 +1,5 @@
 import Page from './page';
 import helpers from "../helpers/helpers";
-//import HomePage from './home/home.page'
 const environmentUrl = process.env.HOST;
 
 class LoginPage extends Page {
@@ -34,9 +33,9 @@ class LoginPage extends Page {
         var resCookie = res.headers['set-cookie'].pop().split(';')[0];
         Cookie  = resCookie.slice(10)
         res.should.have.status(302);
-        await browser.deleteCookies('JSESSIONID')
+        await browser.deleteCookies('sessionid')
         await browser.execute(
-            setCookie => document.cookie='JSESSIONID='+setCookie, Cookie
+            setCookie => document.cookie='sessionid='+setCookie, Cookie
         );
         await browser.url(environmentUrl);
     }

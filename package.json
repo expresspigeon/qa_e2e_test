@@ -27,7 +27,7 @@
         "wdio-mochawesome-reporter": "^3.2.0"
     },
     "scripts": {
-        "test": "cross-env HOST=https://expresspigeontest.com/ USER=evgeniy.shvab+0331r@gmail.com ./node_modules/.bin/wdio",
+        "test": "cross-env HOST=https://expresspigeontest.com/ USER=evgeniy.shvab+0331r@gmail.com SECRET=QlCsS5_Fo#Y3 PASSWORD=Ghjcnjgfhjkm_12345! ./node_modules/.bin/wdio",
         "reportGenerate": "allure generate allure-results/ --clean"
     },
     "keywords": [],
