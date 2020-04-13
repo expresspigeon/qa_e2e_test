@@ -14,8 +14,4 @@ describe('ExpressPigeon login page', () => {
         expect(LoginPage.badPasswordMsg.getText()).to.be.equal('Invalid login credentials, please try again');
         expect(browser.getUrl()).to.deep.include('/access/login');
     });
-    it('correct data', () => {
-        LoginPage.login(userName, 'QlCsS5_Fo#Y3', 'Ghjcnjgfhjkm_12345!')
-        expect(browser.getTitle()).to.be.equal('Dashboard | ExpressPigeon');
-    });
 });
