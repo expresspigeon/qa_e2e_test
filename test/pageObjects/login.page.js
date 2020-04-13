@@ -25,21 +25,6 @@ class LoginPage extends Page {
         this.submit()
     }
 
-    async getLoggedSession(user)  {
-        let Cookie
-        await browser.url(environmentUrl);
-        var res;
-        res = await helpers.getLoginSession(user);
-        var resCookie = res.headers['set-cookie'].pop().split(';')[0];
-        Cookie  = resCookie.slice(10)
-        res.should.have.status(302);
-        await browser.deleteCookies('sessionid')
-        await browser.execute(
-            setCookie => document.cookie='sessionid='+setCookie, Cookie
-        );
-        await browser.url(environmentUrl);
-    }
-
 }
 
 export default new LoginPage();
