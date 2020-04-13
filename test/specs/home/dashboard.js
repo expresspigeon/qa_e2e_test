@@ -6,7 +6,6 @@ const pwdName = process.env.PASSWORD;
 const environmentUrl = process.env.HOST;
 
 describe('Dashboard', () => {
-    let name
 
     before(function() {
         LoginPage.open()
