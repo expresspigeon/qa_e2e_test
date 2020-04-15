@@ -6,15 +6,15 @@ class DashboardPage extends Page {
 
     get menu() { return $(`#site-menu`); }
     get logoutBtn() { return $(`[action='/access/logout']`); }
-    get pageTitle() { return $(`.dashboard h1`);}
-    get viewCampaignsBtn() { return $(`.btn[href='/campaigns']`);}
-    get editTemplateBtn() { return $(`.btn[href='/templates']`);}
-    get manageListsBtn() { return $(`.btn[href='/lists']`);}
-    get viewCampaignsText() { return $(`h4 [href='/campaigns']`);}
-    get viewTemplatesText() { return $(`h4 [href='/templates']`);}
-    get viewListsText() { return $(`h4 [href='/lists']`);}
-    get tutorialsBtn() { return $(`.btn[data-toggle='modal']`)} 
-    get blogBtn() { return $(`.btn[href='/blog']`)} 
+    get pageTitle() { return $(`#page-title`);}
+    get viewCampaignsBtn() { return $(`#view-campaigns-btn`);}
+    get editTemplateBtn() { return $(`#edit-templates-btn`);}
+    get manageListsBtn() { return $(`#manage-lists-btn`);}
+    get viewCampaignsText() { return $(`#view-campaigns-lnk`);}
+    get viewTemplatesText() { return $(`#edit-templates-lnk`);}
+    get viewListsText() { return $(`#manage-lists-lnk`);}
+    get tutorialsBtn() { return $(`#tutorials-btn`)} 
+    get blogBtn() { return $(`#blog-btn`)} 
     get closeTutorialModal() {return $(`[type='button'][data-dismiss='modal']`);}
     get backToDashboardBtn() { return $(`[title='back to dashboard']`)} 
 
