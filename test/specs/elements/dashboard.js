@@ -14,7 +14,7 @@ describe('Dashboard Page', () => {
 
     DashboardPage.allElements().forEach(el => {
         it('have all elements', async () => {
-            await browser.setTimeout({ 'implicit': 5000 })
+            await browser.setTimeout({ 'implicit': 6000 })
             expect(await browser.getTitle()).to.deep.include('Dashboard | ExpressPigeon')
             expect(await (await el).isDisplayed(), (await el).error.message).to.be.true;
         });

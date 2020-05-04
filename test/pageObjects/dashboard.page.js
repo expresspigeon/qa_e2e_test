@@ -4,8 +4,6 @@ const environmentUrl = process.env.HOST;
 
 class DashboardPage extends Page {
 
-    get menu() { return $(`#site-menu`); }
-    get logoutBtn() { return $(`[action='/access/logout']`); }
     get pageTitle() { return $(`#page-title`);}
     get viewCampaignsBtn() { return $(`#view-campaigns-btn`);}
     get editTemplateBtn() { return $(`#edit-templates-btn`);}
@@ -24,7 +22,6 @@ class DashboardPage extends Page {
 
     allElements() {
         return [
-            this.pageTitle,
             this.viewCampaignsBtn,
             this.editTemplateBtn,
             this.manageListsBtn,
@@ -35,13 +32,6 @@ class DashboardPage extends Page {
             this.blogBtn
         ]
     }
-
-    logout() {
-        this.menu.click()
-        this.logoutBtn.waitForDisplayed()
-        this.logoutBtn.click()
-    }
-
 }
 
 export default new DashboardPage();
