@@ -1,6 +1,6 @@
 import ContactLists from '../../pageObjects/contacts/lists.page'
 import LoginPage from '../../pageObjects/login.page'
-import DashboardPage from '../../pageObjects/dashboard.page'
+import Menu from '../../pageObjects/menu.page'
 const userName = process.env.USER;
 const secretName = process.env.SECRET;
 const pwdName = process.env.PASSWORD;
@@ -14,7 +14,7 @@ describe('Contact Lists', () => {
         LoginPage.login(userName,secretName,pwdName)
     });
     after(function () {
-        DashboardPage.logout()
+        Menu.logout()
     })
     it('Lists: Open Page and Click Search Icon', () => {
         ContactLists.open(); 
