@@ -24,7 +24,7 @@ exports.getLoginSession = (user=userName) => {
         .send({
             'email': user,
             'secret': 'QlCsS5_Fo#Y3',
-            'password': 'Ghjcnjgfhjkm_12345!'
+            'password': 'Qwerty_123!'
         })
 };
 

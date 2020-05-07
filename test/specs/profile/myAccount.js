@@ -91,8 +91,8 @@ describe('My Account', () => {
     it('can change password', () => { 
         MyAccountPage.open()
         MyAccountPage.email.waitForDisplayed()
-        MyAccountPage.password.setValue('Ghjcnjgfhjkm_12345!')
-        MyAccountPage.confirmPassword.setValue('Ghjcnjgfhjkm_12345!')
+        MyAccountPage.password.setValue('Qwerty_123!')
+        MyAccountPage.confirmPassword.setValue('Qwerty_123!')
         MyAccountPage.resetPasswordBtn.click()
         MyAccountPage.updateSuccessMsg.waitForDisplayed()
         expect(MyAccountPage.updateSuccessMsg.getText()).to.be.equal('×\nYour password has been reset. Please make a note of it.')
