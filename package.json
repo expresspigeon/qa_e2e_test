@@ -24,7 +24,7 @@
         "chai-http": "^4.3.0",
         "chai-string": "^1.5.0",
         "cross-env": "^7.0.2",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "moment-timezone": "^0.5.28",
         "wdio-mochawesome-reporter": "^3.2.0"
     },
